@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -11,17 +11,19 @@
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main>
-      <h1>Search for YouTube Videos by name on ThinkfulTube</h1>
+    <header>
+    <h1>Welcome to ThinkfulTube</h1>
+    </header>
+    <div class="container" role="main">
       <form action="#" class="jsSearchForm">
-        <label for="query"></label>
-        <input type="text" class="jsQuery">
+        <label for="query">Search videos right here!
+        <input type="text" class="jsQuery" role="search">
+        </label>
         <button type="submit">Search</button>
       </form>
 
-      <h2>Results<h2>
-      <div class="jsSearchResults"></div>
-    </main>
+      <section class="jsSearchResults" aria-live="assertive"></section>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
